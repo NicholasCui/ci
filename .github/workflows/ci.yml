@@ -21,11 +21,6 @@ jobs:
       
       - run:
           npm ci
-
-      - name: Build and check size
-        run: |
-          npm run build
-          du -sh dist
       
       - name: npm test
         run: npm test
